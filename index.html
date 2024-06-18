@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+
+    <link rel="stylesheet" href="./src/assets/style.css" />
+
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <video
+      id="maVideo"
+      autoplay
+      loop
+      muted
+      class="fixed left-0 top-0 z-[-1] h-full w-full object-cover"
+    >
+      <source src="src/assets/videos/particule.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+    <main class="flex w-full justify-center p-10 shadow-xl">
+      <div class="">
+        <ul
+          class="mb-8 flex justify-center gap-6 font-mono text-2xl text-slate-600 md:flex-row md:justify-between"
+        >
+          <li
+            class="text-animate group rounded-md px-4 py-2 font-mono text-2xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out hover:underline"
+          >
+            Accueil
+          </li>
+          <li
+            class="text-animate transition-allduration-300 group rounded-md px-4 py-2 font-mono text-2xl text-slate-600 underline-offset-4 shadow ease-in-out hover:underline"
+          >
+            Info
+          </li>
+          <li></li>
+          <li
+            class="text-animate group rounded-md px-4 py-2 font-mono text-2xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out hover:underline"
+          >
+            Contact
+          </li>
+          <li
+            class="text-animate group rounded-md px-4 py-2 font-mono text-2xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out hover:underline"
+          >
+            Parametre
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="flex h-auto w-full flex-col p-10 font-mono">
+      <h1
+        class="text-animate group p-4 font-mono text-3xl text-slate-200 transition-all duration-300 ease-in-out"
+      >
+        Qui suis-je?
+      </h1>
+      <blockquote class="text-2xl font-semibold italic text-zinc-50">
+        Je suis un développeur web passionné par la création de sites web et
+        d'applications web. J'aime apprendre de nouveaux langages et je suis
+        toujours prêt à relever de nouveaux défis. Je suis également un grand
+        fan de la partie
+        <span
+          class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-blue-500"
+        >
+          <span class="relative text-white">front-end</span>
+        </span>
+        du code, j'aime créer des interfaces utilisateur et des animations
+        otpimimés à tous.
+      </blockquote>
+    </div>
+
+    <!-- animation  -->
+    <div class="flex h-24 w-full items-center justify-center">
+      <h1
+        id="typewriter"
+        class="p-7 font-mono text-4xl text-teal-200 ease-in-out"
+      ></h1>
+    </div>
+
+    <script>
+      const words = ["Mes projets"];
+      let i = 0;
+      let j = 0;
+      let currentWord = "";
+      let isDeleting = false;
+
+      function type() {
+        currentWord = words[i];
+        if (isDeleting) {
+          document.getElementById("typewriter").textContent =
+            currentWord.substring(0, j - 1);
+          j--;
+          if (j == 0) {
+            isDeleting = false;
+            i++;
+            if (i == words.length) {
+              i = 0;
+            }
+          }
+        } else {
+          document.getElementById("typewriter").textContent =
+            currentWord.substring(0, j + 1);
+          j++;
+          if (j == currentWord.length) {
+            isDeleting = true;
+          }
+        }
+        setTimeout(type, 150);
+      }
+
+      type();
+    </script>
+
+    <!-- Component: Logos carousel -->
+    <div class="glide-09 relative w-full overflow-hidden">
+      <!-- Slides -->
+      <div data-glide-el="track">
+        <ul
+          class="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative top-10 flex w-full overflow-hidden"
+        >
+          <li>
+            <a href="https://mangoo-swart.vercel.app/">
+              <img
+                src="src/assets/images/mangoo.png"
+                class="m-auto h-max max-h-full w-auto max-w-full"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href=" https://boutique-pokemon.vercel.app/">
+              <img
+                src="src/assets/images/pokemon.png"
+                class="m-auto h-max max-h-full w-auto max-w-full"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://mangoo-swart.vercel.app/">
+              <img
+                src="src/assets/images/fon.png"
+                class="m-auto h-max max-h-full w-auto max-w-full"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <style>
+      .text-animate {
+        animation: text-color-animation 3s infinite alternate linear;
+      }
+
+      @keyframes text-color-animation {
+        0% {
+          color: rgba(184, 203, 245, 0.662); /* Red */
+        }
+        50% {
+          color: rgba(226, 207, 230, 0.539); /* Blue */
+        }
+        50% {
+          color: rgb(74, 130, 255); /* Green */
+        }
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+    <script>
+      var glide09 = new Glide(".glide-09", {
+        type: "carousel",
+        autoplay: 1,
+        animationDuration: 8500,
+        animationTimingFunc: "linear",
+        perView: 3,
+        classes: {
+          activeNav: "[&>*]:bg-slate-700",
+        },
+        breakpoints: {
+          1024: {
+            perView: 2,
+          },
+          640: {
+            perView: 1,
+            gap: 36,
+          },
+        },
+      });
+
+      glide09.mount();
+    </script>
+  </body>
+</html>
