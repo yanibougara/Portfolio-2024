@@ -25,17 +25,17 @@
       <div class="fixed">
         <ul
           class="mb-8 flex justify-center gap-6 font-mono text-2xl text-slate-600 md:flex-row md:justify-between h-auto w-full">
-          <li class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out hover:underline  h-auto w-full">
+          <li class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out   h-auto w-full">
            <a href="mes-infos">Mes infos</a>
           </li>
-          <li class="text-animate transition-allduration-300 group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow ease-in-out hover:underline"> 
+          <li class="text-animate transition-all duration-300 group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow ease-in-out "> 
         <a href="#langages">Langages</a>
           </li>
           <li
-            class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out hover:underline">
+            class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out ">
              <a href="#contact">Contact</a>
           </li>
-          <li class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out hover:underline">
+          <li class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out ">
            <a href="#projets">Projets</a>
           </li>
         </ul>
@@ -48,8 +48,8 @@
         class="m-auto flex h-40 w-40 animate-bounce rounded-full border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"/>
 
       <h1
-        class="text-animate group p-7 font-mono text-7xl text-slate-200 transition-all duration-300 ease-in-out ">
-       <a href="mes-infos">Qui-suis-je ?</a>
+        class="text-animate group p-7 font-mono text-7xl text-slate-200 transition-all duration-300 "> Qui suis-je ?
+      
      
       </h1>
       <blockquote
@@ -121,7 +121,7 @@
     </div>
     <div id="contact" class="flex w-full flex-col p-10 font-mono h-screen">
   <h1
-    class="text-animate group p-10 font-mono text-7xl text-slate-200 transition-all duration-300 ease-in-out">
+    class="text-animate group p-10 font-mono text-7xl text-slate-200 transition-all duration-300 ease-in-out pb-28">
     Où me contacter ?
   </h1>
   <div class="m-10 flex flex-row gap-8">
@@ -155,6 +155,8 @@
     <!-- animation  -->
     <div id="projets" class="flex h-24 w-full items-center justify-center ">
       <h1 id="typewriter" class="text-animate group p-8 font-mono text-7xl text-teal-200 transition-all duration-300 ease-in-out">
+        <h1 class="  font-mono text-7xl text-teal-200  duration-300 ease-in-out">
+        |
       </h1>
     </div>
 
@@ -193,7 +195,7 @@
     </script>
 
     <!-- Component: Logos carousel -->
-    <div class="glide-09 relative w-full h-full overflow-hidden">
+    <div class="glide-09 relative w-full h-full overflow-hidden py-10">
       <!-- Slides -->
       <div data-glide-el="track">
         <ul
@@ -215,7 +217,7 @@
           </li>
 
           <li>
-            <a href="https://mangoo-swart.vercel.app/">
+            <a href="https://site-vitrine-film.vercel.app/">
               <img
                 src="src/assets/images/fon.png"
                 class="m-auto h-max max-h-full w-auto max-w-full border-2 border-sky-200 text-sky-200"/>
@@ -283,20 +285,45 @@
         }
       }
       
+.text-animate a {
+  position: relative;
+  color: #43abdf; /* Couleur du texte */
+  text-decoration: none; /* Supprimer la décoration de texte par défaut */
+}
 
+.text-animate a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #5ca6cb; /* Couleur du soulignement */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.text-animate a:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
+}
+
+
+      
       .text-animate1 {
         animation: text-color-animation 3s infinite alternate linear;
       }
 
       @keyframes text-color-animation {
-        0% {
+        50% {
           color: rgb(135, 231, 238); /* Red */
         }
         50% {
-          color: rgba(207, 203, 203, 0.47); /* Blue */
+          color: rgba(228, 227, 227, 0.548); /* Blue */
         }
         50% {
-          color: rgb(80, 190, 250); /* Green */
+          color: rgb(23, 161, 236); /* Green */
         }
       }
       
