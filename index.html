@@ -118,7 +118,7 @@
   </div>
 </div>
 
-    <div id="contact" class="flex w-full flex-col p-10 font-mono h-screen">
+    <div id="contact" class="flex w-full flex-col p-10 font-mono h-screen ">
   <h1
     class="text-animate group p-10 font-mono text-4xl text-slate-200 transition-all duration-300 sm:text-7xl ">
     Où me contacter ?
@@ -222,23 +222,19 @@
                 class="m-auto h-max max-h-full w-auto max-w-full border-2 border-sky-200 text-sky-200"/>
             </a>
           </li>
-          <a href="https://bap-iota.vercel.app/">
-              <img
-                src="src/assets/images/f.png"
-                class="m-auto h-max max-h-full w-auto max-w-full border-2 border-sky-200 text-sky-200"/>
-            </a>
+         
           </li>
         </ul>
       </div>
     </div>
-    <div id="cv" class="flex h-auto w-full flex-col font-mono">
+    <div id="cv" class="flex h-full w-full flex-col font-mono ">
   <h1
     class="text-animate group p-10 font-mono text-4xl sm:text-7xl text-slate-200 transition-all duration-300 ease-in-out text-center ">
     Mon CV
   </h1>
-  <div class="m-10 flex w-96 justify-center sm:h-full sm:w-full">
-    <img src="src/assets/images/cv.png" class="border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] sm:justify-center "/>
-  </div>
+<div class="flex justify-center">
+<img src="src/assets/images/cv.png" class="mx-auto border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]" />
+</div>
 </div>
       <footer class="fixed left-0 bottom-0 w-full bg-gray-800">
     <p class="text-center text-white py-3">&copy; 2024 Portfolio développé avec passion & moi-meme</p>
@@ -297,7 +293,8 @@
           },
           640: {
             perView: 1,
-            gap: 36,
+            gap: 6,
+            
           },
         },
       });
@@ -307,6 +304,10 @@
 
 
     <style>
+      html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
       .text-animate {
         animation: text-color-animation 3s infinite alternate linear;
       }
@@ -378,7 +379,7 @@
     background-color: #333;
     color: white;
   }
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .glide-09 ul li img {
     max-width: 90%; /* Réduit la largeur maximale des images */
     height: auto; /* Ajuste la hauteur automatiquement */
