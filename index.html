@@ -1,448 +1,1128 @@
 <!doctype html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Portfolio 2024</title>
     <link rel="stylesheet" href="./src/assets/style.css" />
-    <script type="module" src="./src/main.js"></script>
-  </head>
-  <body class="w-full h-full">
-    <video
-  id="maVideo"
-  autoplay
-  muted
-  playsinline
-  loop
-  class="fixed left-0 top-0 z-[-1] h-screen w-screen object-cover"
->
-  <source src="src/assets/videos/particule.mp4" type="video/mp4" />
-  Votre navigateur ne supporte pas la lecture de vidéos.
-</video>
-   <div id="mes-infos">
-    <main class="flex justify-center items-center p-12 shadow-xl ">
-      <div class="fixed ">
-        <ul
-          class="hidden mb-8 justify-center gap-6 font-mono text-2xl text-slate-600 md:flex md:flex-row md:justify-between h-auto w-full">
-          <li class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out   h-auto w-full">
-           <a href="#mes-infos">Mes infos</a>
-          </li>
-          <li class="text-animate transition-all duration-300 group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow ease-in-out "> 
-        <a href="#langages">Langages</a>
-          </li>
-          <li
-            class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out ">
-             <a href="#contact">Contact</a>
-          </li>
-          <li class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out ">
-           <a href="#projets">Projets</a>
-          </li>
-            <li class="text-animate group rounded-md px-4 py-2 font-mono text-3xl text-slate-600 underline-offset-4 shadow transition-all duration-300 ease-in-out">
-    <a href="#cv">CV</a>
-  </li>
-        </ul>
-      </div>
-    </main>
-</div>
-    <div class="flex h-auto w-full flex-col p-10 font-mono items-center md:items-center ">
-   
-      <img
-        src="src/assets/images/me.png"
-        class="m-auto flex h-40 w-40 animate-bounce rounded-full border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"/>
-
-      <h1
-        class="text-animate group p-7 font-mono text-4xl text-slate-200 transition-all duration-300 sm:text-7xl "> Qui suis-je ?
-      </h1>
-     
-      <blockquote
-        class="p-8 text-1xl sm:text-2xl font-semibold italic sm:leading-10 leading-5 text-zinc-200 ">
-        Je suis un développeur web étudiant à l'IIM localisé à la Défense,dont l'objectif est d'obtenir un master en coding & digital innovation.<br />
-        Passionné par la création de sites web et d'applications web,<br />
-        J'aime apprendre de nouveaux langages et je suis toujours prêt à relever
-        de nouveaux défis. <br>Je suis également un grand fan de la partie
-        <span
-          class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-blue-500">
-          <span class="text-animate1 relative text-white">front-end</span>
-        </span>
-        du code,<br> j'aime créer des interfaces utilisateur et des animations
-        otpimimés à tous.
-      </blockquote>
-    </div>
-
-    <div id="langages" class="flex flex-col p-11 font-mono">
-  <h1 class="text-animate group p-7 font-mono text-4xl text-slate-200 transition-all duration-300 sm:text-7xl">
-    Langages de programmation
-  </h1>
-
-  <div class="m-10 flex flex-wrap gap-8 justify-center">
-    <img src="src/assets/images/html.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/css.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/js.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/php.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/sass.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-  </div>
-</div>
-  <div id="Frameworks-outils" class="flex flex-col p-11 font-mono">
-  <h1 class="text-animate group p-7 font-mono text-4xl text-slate-200 transition-all duration-300 sm:text-7xl ">
-    Frameworks et outils
-  </h1>
-
-  <div class="m-10 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-10">
-    <img src="src/assets/images/tailwind.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/vite.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/vue.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/wp.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/symfony.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/boostrap.png"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/figma.png"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/prisma.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/postman.svg"
-      class="w-20 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-    <img src="src/assets/images/glider.png"
-      class="w-20 h-20 sm:h-24 md:w-24 transition-transform border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] hover:scale-125 rounded-full"/>
-  </div>
-</div>
-
-    <div id="contact" class="flex w-full flex-col p-10 font-mono h-screen ">
-  <h1
-    class="text-animate group p-10 font-mono text-4xl text-slate-200 transition-all duration-300 sm:text-7xl ">
-    Où me contacter ?
-  </h1>
-  <div class="m-10 flex flex-row gap-8">
-
-    <a href="mailto:bougarayani@gmail.com">
-      <img
-        src="src/assets/images/mail.svg"
-        class="sm:h-28 w-28  transition-duration-500 rounded-full border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] transition hover:scale-125"/>
-    </a>
-
-    <a href="https://www.linkedin.com/in/yani-bougara-15850224b/">
-      <img
-        src="src/assets/images/linkedin.svg"
-        class="sm:h-28 w-28 transition-duration-500  border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] transition hover:scale-125 rounded-full"/>
-    </a>
-
-    <a href="https://github.com/yanibougara">
-      <img
-        src="src/assets/images/github.svg"
-        class="sm:h-28 w-28 transition-duration-500 rounded-full border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] transition hover:scale-125"/>
-    </a>
-
-    <a href="tel:+33767522827">
-      <img src="src/assets/images/tel.svg"
-        class="sm:h-28 w-28 transition-duration-500 rounded-full border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] transition hover:scale-125"
-      />
-    </a>
-  </div>
-</div>
-
-    <!-- animation  -->
-    <div id="projets" class="flex h-24 w-full items-center justify-center ">
-      <h1 id="typewriter" class="text-animate group p-8 font-mono text-4xl sm:text-7xl text-teal-200 transition-all duration-300 ease-in-out mt-20">
-        <h1 class="  font-mono text-7xl text-teal-200  duration-300 ease-in-out mt-20">
-        |
-      </h1>
-    </div>
-
-    <script>
-      const words = ["Mes projets"];
-      let i = 0;
-      let j = 0;
-      let currentWord = "";
-      let isDeleting = false;
-
-      function type() {
-        currentWord = words[i];
-        if (isDeleting) {
-          document.getElementById("typewriter").textContent =
-            currentWord.substring(0, j - 1);
-          j--;
-          if (j == 0) {
-            isDeleting = false;
-            i++;
-            if (i == words.length) {
-              i = 0;
-            }
-          }
-        } else {
-          document.getElementById("typewriter").textContent =
-            currentWord.substring(0, j + 1);
-          j++;
-          if (j == currentWord.length) {
-            isDeleting = true;
-          }
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Glide.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.theme.min.css">
+    <style>
+      /* Base Styles */
+      html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        background-color: #000;
+      }
+      
+      /* Animation Keyframes */
+      @keyframes text-color-animation {
+        0% { color: rgba(184, 203, 245, 0.95); }
+        50% { color: rgba(80, 190, 250, 0.95); }
+        100% { color: rgba(129, 230, 237, 0.95); }
+      }
+      
+      @keyframes pulse-slow {
+        0% { opacity: 0.7; }
+        50% { opacity: 1; }
+        100% { opacity: 0.7; }
+      }
+      
+      @keyframes ping-slow {
+        0% { transform: scale(1); opacity: 0.8; }
+        70%, 100% { transform: scale(1.5); opacity: 0; }
+      }
+      
+      @keyframes ping-slower {
+        0% { transform: scale(1); opacity: 0.6; }
+        70%, 100% { transform: scale(1.8); opacity: 0; }
+      }
+      
+      @keyframes tilt {
+        0%, 100% { transform: rotate(-1deg); }
+        50% { transform: rotate(1deg); }
+      }
+      
+      /* Text Gradient Class */
+      .text-gradient {
+        background: linear-gradient(to right, #60a5fa, #5eead4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: pulse-slow 3s infinite;
+      }
+      
+      /* Button Styles */
+      .button-primary {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.75rem 1.5rem;
+        background-image: linear-gradient(to right, #3b82f6, #2dd4bf);
+        border-radius: 9999px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+      }
+      
+      .button-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 25px rgba(59, 130, 246, 0.7);
+      }
+      
+      .button-secondary {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.75rem 1.5rem;
+        background-color: transparent;
+        border: 2px solid #3b82f6;
+        border-radius: 9999px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+      
+      .button-secondary:hover {
+        background-color: rgba(59, 130, 246, 0.2);
+        transform: translateY(-2px);
+      }
+      
+      /* Shadow Glow Effect */
+      .shadow-glow {
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+      }
+      
+      /* Skill Card Styles */
+      .skill-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+      }
+      
+      .skill-icon-wrapper {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        border: 2px solid rgba(59, 130, 246, 0.3);
+        margin-bottom: 1rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      
+      .skill-icon {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+        transition: all 0.3s ease;
+      }
+      
+      .skill-name {
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0.5rem;
+        opacity: 0.9;
+        transition: all 0.3s ease;
+      }
+      
+      .skill-level {
+        width: 100%;
+        max-width: 120px;
+      }
+      
+      .skill-card:hover .skill-icon-wrapper {
+        border-color: rgba(59, 130, 246, 0.8);
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        transform: translateY(-5px);
+      }
+      
+      .skill-card:hover .skill-icon {
+        transform: scale(1.1);
+      }
+      
+      .skill-card:hover .skill-name {
+        color: #60a5fa;
+      }
+      
+      /* Tool Card Styles */
+      .tool-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        background-color: rgba(17, 24, 39, 0.5);
+        border: 1px solid rgba(59, 130, 246, 0.2);
+        transition: all 0.3s ease;
+      }
+      
+      .tool-icon {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+      }
+      
+      .tool-name {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: white;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+      }
+      
+      .tool-card:hover {
+        transform: translateY(-5px);
+        background-color: rgba(59, 130, 246, 0.1);
+        border-color: rgba(59, 130, 246, 0.5);
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+      }
+      
+      .tool-card:hover .tool-icon {
+        transform: scale(1.1);
+      }
+      
+      .tool-card:hover .tool-name {
+        color: #60a5fa;
+        opacity: 1;
+      }
+      
+      /* Project Card Styles */
+      .project-card {
+        padding: 1rem;
+      }
+      
+      .project-link {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.75rem;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+      
+      .project-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      
+      .project-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1.5rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+        color: white;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+      }
+      
+      .project-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      
+      .project-description {
+        font-size: 0.875rem;
+        opacity: 0.8;
+        margin-bottom: 1rem;
+      }
+      
+      .project-cta {
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #60a5fa;
+      }
+      
+      .project-link:hover .project-image {
+        transform: scale(1.05);
+      }
+      
+      .project-link:hover .project-overlay {
+        transform: translateY(0);
+      }
+      
+      /* Glide Arrows & Bullets */
+      .glide__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        border: 1px solid rgba(59, 130, 246, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 2;
+      }
+      
+      .glide__arrow:hover {
+        background-color: rgba(59, 130, 246, 0.8);
+      }
+      
+      .glide__arrow--left {
+        left: 1rem;
+      }
+      
+      .glide__arrow--right {
+        right: 1rem;
+      }
+      
+      .glide__bullets {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+      }
+      
+      .glide__bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0 0.25rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        transition: all 0.3s ease;
+      }
+      
+      .glide__bullet:hover,
+      .glide__bullet--active {
+        background-color: #3b82f6;
+      }
+      
+      /* Contact Card Styles */
+      .contact-card {
+        background-color: rgba(17, 24, 39, 0.5);
+        border: 1px solid rgba(59, 130, 246, 0.2);
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      
+      .contact-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      .contact-icon-wrapper {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: rgba(59, 130, 246, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+      }
+      
+      .contact-icon {
+        font-size: 1.5rem;
+        color: #60a5fa;
+        transition: all 0.3s ease;
+      }
+      
+      .contact-label {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+      
+      .contact-value {
+        font-size: 0.875rem;
+        color: rgba(255, 255, 255, 0.7);
+        transition: all 0.3s ease;
+      }
+      
+      .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        border-color: rgba(59, 130, 246, 0.5);
+      }
+      
+      .contact-card:hover .contact-icon-wrapper {
+        background-color: rgba(59, 130, 246, 0.2);
+        transform: scale(1.1);
+      }
+      
+      .contact-card:hover .contact-icon {
+        transform: scale(1.1);
+      }
+      
+      .contact-card:hover .contact-value {
+        color: #60a5fa;
+      }
+      
+      /* Form Styles */
+      .form-input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        background-color: rgba(17, 24, 39, 0.8);
+        color: white;
+        border: 1px solid rgba(59, 130, 246, 0.2);
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+      }
+      
+      .form-input:focus {
+        outline: none;
+        border-color: rgba(59, 130, 246, 0.5);
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+      }
+      
+      .form-input::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+      }
+      
+      /* Footer Styles */
+      .footer-icon-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(59, 130, 246, 0.1);
+        color: rgba(255, 255, 255, 0.7);
+        transition: all 0.3s ease;
+      }
+      
+      .footer-icon-link:hover {
+        background-color: rgba(59, 130, 246, 0.3);
+        color: white;
+        transform: translateY(-3px);
+      }
+      
+      /* Nav Active State */
+      .nav-link.active a {
+        color: #60a5fa;
+        position: relative;
+      }
+      
+      .nav-link.active a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #60a5fa;
+      }
+      
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .skill-icon-wrapper, .contact-icon-wrapper {
+          width: 60px;
+          height: 60px;
         }
-        setTimeout(type, 150);
+        
+        .skill-icon, .tool-icon {
+          width: 50px;
+          height: 50px;
+        }
+        
+        .project-title {
+          font-size: 1.25rem;
+        }
+        
+        .glide__arrow {
+          width: 35px;
+          height: 35px;
+        }
       }
 
-      type();
-    </script>
+      /* Animation pour le bouton retour en haut */
+      .animate-ping-slow {
+        animation: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
 
-    <!-- Component: Logos carousel -->
-    <div class="glide-09 relative w-full h-full overflow-hidden p-20">
-      <!-- Slides -->
-      <div data-glide-el="track">
-        <ul
-          class="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden ">
-          <li>
-            <a href="https://mangoo-swart.vercel.app/">
-              <img
-                src="src/assets/images/mangoo.png"
-                class="m-auto h-max max-h-full w-full max-w-full border-2 border-sky-200 text-sky-200"/>
-            </a>
-          </li>
+      .animate-ping-slower {
+        animation: ping-slower 4s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
 
-          <li>
-            <a href=" https://boutique-pokemon.vercel.app/">
-              <img
-                src="src/assets/images/pokemon.png"
-                class="m-auto h-max max-h-full w-auto max-w-full border-2 border-sky-200 text-sky-200"/>
-            </a>
-          </li>
+      .animate-tilt {
+        animation: tilt 6s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="w-full min-h-screen bg-black text-white font-mono flex flex-col">
+    <!-- Background Video -->
+    <video
+      id="maVideo"
+      autoplay
+      muted
+      playsinline
+      loop
+      class="fixed left-0 top-0 z-[-1] h-screen w-screen object-cover"
+    >
+      <source src="src/assets/videos/particule.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
 
-          <li>
-            <a href="https://site-vitrine-film.vercel.app/">
-              <img
-                src="src/assets/images/fon.png"
-                class="m-auto h-max max-h-full w-auto max-w-full border-2 border-sky-200 text-sky-200"/>
-            </a>
-          </li>
-        
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-black bg-opacity-60 backdrop-blur-md border-b border-blue-400/30">
+      <div class="container mx-auto px-4">
+        <nav class="flex justify-between items-center py-4">
+          <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-teal-300 text-transparent bg-clip-text">Yani.B</div>
+          
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex space-x-8">
+            <li class="nav-link"><a href="#mes-infos" class="hover:text-blue-400 transition-colors duration-300">Mes infos</a></li>
+            <li class="nav-link"><a href="#langages" class="hover:text-blue-400 transition-colors duration-300">Langages</a></li>
+            <li class="nav-link"><a href="#Frameworks-outils" class="hover:text-blue-400 transition-colors duration-300">Outils</a></li>
+            <li class="nav-link"><a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a></li>
+            <li class="nav-link"><a href="#projets" class="hover:text-blue-400 transition-colors duration-300">Projets</a></li>
+            <li class="nav-link"><a href="#cv" class="hover:text-blue-400 transition-colors duration-300">CV</a></li>
+          </ul>
+          
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </nav>
 
-
-        <li>
-            <a href="https://peupli-art-84s9.vercel.app/">
-              <img
-                src="src/assets/images/peupli-art.png"
-                class="m-auto h-max max-h-full w-auto max-w-full border-2 border-sky-200 text-sky-200"/>
-            </a>
-          </li>
-
-
-
-        <li>
-            <a href="https://presentation-website-8u38.vercel.app/">
-              <img
-                src="src/assets/images/a.png"
-                class="m-auto h-max max-h-full w-auto max-w-full border-2 border-sky-200 text-sky-200"/>
-            </a>
-          </li>
-
-
-
-
-          </li>
-        </ul>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden">
+          <ul class="flex flex-col space-y-4 py-4">
+            <li><a href="#mes-infos" class="block hover:text-blue-400 transition-colors duration-300">Mes infos</a></li>
+            <li><a href="#langages" class="block hover:text-blue-400 transition-colors duration-300">Langages</a></li>
+            <li><a href="#Frameworks-outils" class="block hover:text-blue-400 transition-colors duration-300">Outils</a></li>
+            <li><a href="#contact" class="block hover:text-blue-400 transition-colors duration-300">Contact</a></li>
+            <li><a href="#projets" class="block hover:text-blue-400 transition-colors duration-300">Projets</a></li>
+            <li><a href="#cv" class="block hover:text-blue-400 transition-colors duration-300">CV</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div id="cv" class="flex h-full w-full flex-col font-mono ">
-  <h1
-    class="text-animate group p-10 font-mono text-4xl sm:text-7xl text-slate-200 transition-all duration-300 ease-in-out text-center ">
-    Mon CV
-  </h1>
-<div class="flex justify-center">
-<img src="src/assets/images/cv.png" class="mx-auto border-2 border-sky-200 text-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]" />
-</div>
-</div>
-      <footer class="fixed left-0 bottom-0 w-full bg-gray-800">
-    <p class="text-center text-white py-3">&copy; 2024 Portfolio développé avec passion & moi-meme</p>
-  </footer>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="mes-infos" class="min-h-screen flex flex-col justify-center items-center py-20">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+          <!-- Photo Profile avec effet avancé -->
+          <div class="relative">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full blur-lg animate-pulse"></div>
+            <div class="relative flex items-center justify-center">
+              <div class="absolute w-40 h-40 rounded-full border-2 border-blue-400/50 animate-ping-slow"></div>
+              <div class="absolute w-40 h-40 rounded-full border-2 border-teal-300/30 animate-ping-slower"></div>
+              <img 
+                src="src/assets/images/me.png" 
+                class="relative w-40 h-40 rounded-full border-2 border-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+                alt="Profil"
+              />
+            </div>
+          </div>
+          
+          <!-- Content -->
+          <div class="max-w-2xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gradient">Qui suis-je ?</h1>
+            <div class="bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-blue-500/20 shadow-glow">
+              <p class="text-lg leading-relaxed text-gray-200">
+                Je suis un <span class="text-blue-400 font-semibold">développeur web</span> étudiant à l'IIM localisé à la Défense, dont l'objectif est d'obtenir un master en coding & digital innovation.
+              </p>
+              <p class="text-lg leading-relaxed text-gray-200 mt-4">
+                Passionné par la création de sites web et d'applications web, j'aime apprendre de nouveaux langages et je suis toujours prêt à relever de nouveaux défis.
+              </p>
+              <p class="text-lg leading-relaxed text-gray-200 mt-4">
+                Je suis également un grand fan de la partie
+                <span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-blue-500 before:animate-pulse-slow">
+                  <span class="relative text-white font-bold">front-end</span>
+                </span>
+                du code, j'aime créer des interfaces utilisateur et des animations optimisées pour tous.
+              </p>
+              
+              <!-- Boutons d'action -->
+              <div class="flex flex-wrap gap-4 mt-8">
+                <a href="#projets" class="button-primary">
+                  <span>Voir mes projets</span>
+                  <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#contact" class="button-secondary">
+                  <span>Me contacter</span>
+                  <i class="fas fa-envelope ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen py-20 bg-gray-900 bg-opacity-30">
+      <div class="container mx-auto px-4">
+        <!-- Titre avec animation -->
+        <div class="flex justify-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold relative text-gradient">
+            Où me contacter ?
+            <span class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-300"></span>
+          </h2>
+        </div>
+        
+        <!-- Contact Cards -->
+        <div class="flex flex-wrap justify-center gap-8 md:gap-16 mb-16">
+          <!-- Email -->
+          <div class="contact-card group">
+            <a href="mailto:bougarayani@gmail.com" class="contact-link">
+              <div class="contact-icon-wrapper">
+                <i class="fas fa-envelope contact-icon"></i>
+              </div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">bougarayani@gmail.com</span>
+            </a>
+          </div>
+          
+          <!-- LinkedIn -->
+          <div class="contact-card group">
+            <a href="https://www.linkedin.com/in/yani-bougara-15850224b/" target="_blank" class="contact-link">
+              <div class="contact-icon-wrapper">
+                <i class="fab fa-linkedin-in contact-icon"></i>
+              </div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Yani Bougara</span>
+            </a>
+          </div>
+          
+          <!-- GitHub -->
+          <div class="contact-card group">
+            <a href="https://github.com/yanibougara" target="_blank" class="contact-link">
+              <div class="contact-icon-wrapper">
+                <i class="fab fa-github contact-icon"></i>
+              </div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">yanibougara</span>
+            </a>
+          </div>
+          
+          <!-- Téléphone -->
+          <div class="contact-card group">
+            <a href="tel:+33767522827" class="contact-link">
+              <div class="contact-icon-wrapper">
+                <i class="fas fa-phone-alt contact-icon"></i>
+              </div>
+              <span class="contact-label">Téléphone</span>
+              <span class="contact-value">+33 7 67 52 28 27</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="py-20">
+      <div class="container mx-auto px-4">
+        <!-- Titre avec animation -->
+        <div class="flex justify-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold relative text-gradient">
+            Mon CV
+            <span class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-300"></span>
+          </h2>
+        </div>
+        
+        <!-- CV Preview -->
+        <div class="max-w-3xl mx-auto">
+          <div class="relative group">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+            <div class="relative bg-black rounded-lg overflow-hidden">
+              <img src="src/assets/images/cv.png" alt="Mon CV" class="w-full h-auto" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-6 left-0 right-0 text-center transform translate-y-10 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                <a href="src/assets/images/cv.png" download class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-medium transition-colors duration-300">
+                  <i class="fas fa-download mr-2"></i>
+                  <span>Télécharger mon CV</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 p-2 w-12 h-12 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Mobile Menu Toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+
+  // Smooth Scrolling
+  const navLinks = document.querySelectorAll('a[href^="#"]');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: 'smooth'
+        });
+        
+        // Close mobile menu if open
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('hidden');
+        }
+      }
+    });
+  });
+  
+  // Typewriter Effect
+  function typewriterEffect() {
+    const words = ["Mes projets"];
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
+
+    function type() {
+      const typewriter = document.getElementById("typewriter");
+      if (!typewriter) return;
+      
+      currentWord = words[i];
+      if (isDeleting) {
+        typewriter.textContent = currentWord.substring(0, j - 1);
+        j--;
+        if (j == 0) {
+          isDeleting = false;
+          i++;
+          if (i == words.length) {
+            i = 0;
+          }
+        }
+      } else {
+        typewriter.textContent = currentWord.substring(0, j + 1);
+        j++;
+        if (j == currentWord.length) {
+          isDeleting = true;
+        }
+      }
+      setTimeout(type, 150);
+    }
+    
+    type();
+  }
+  
+  // Initialize typewriter
+  typewriterEffect();
+  
+  // Initialize Glide slider if it exists
+  if (typeof Glide !== 'undefined' && document.querySelector('.glide-09')) {
+    new Glide('.glide-09', {
+      type: 'carousel',
+      autoplay: 5000,
+      hoverpause: true,
+      perView: 3,
+      gap: 30,
+      animationDuration: 800,
+      breakpoints: {
+        1024: { perView: 2 },
+        640: { perView: 1 }
+      }
+    }).mount();
+  }
+  
+  // Back to Top Button
+  const backToTopButton = document.getElementById('back-to-top');
+  
+  if (backToTopButton) {
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopButton.classList.remove('opacity-100', 'visible');
+        backToTopButton.classList.add('opacity-0', 'invisible');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+  
+  // Highlight active navigation items
+  function highlightNavigation() {
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.nav-link');
+    
+    let current = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.clientHeight;
+      
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute('id');
+      }
+    });
+    
+    navItems.forEach(item => {
+      item.classList.remove('active');
+      if (item.querySelector('a').getAttribute('href') === `#${current}`) {
+        item.classList.add('active');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', highlightNavigation);
+});
+    </script>
   </body>
 </html>
 
+    <!-- Languages Section -->
+    <section id="langages" class="py-20 relative">
+      <div class="container mx-auto px-4">
+        <!-- Titre avec animation -->
+        <div class="flex justify-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold relative text-gradient">
+            Langages de programmation
+            <span class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-300"></span>
+          </h2>
+        </div>
+        
+        <!-- Grid de compétences -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 place-items-center">
+          <!-- HTML -->
+          <div class="skill-card group">
+            <div class="skill-icon-wrapper">
+              <img src="src/assets/images/html.svg" alt="HTML" class="skill-icon" />
+            </div>
+            <div class="skill-name">HTML</div>
+            <div class="skill-level">
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div class="bg-gradient-to-r from-blue-500 to-teal-300 h-2 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- CSS -->
+          <div class="skill-card group">
+            <div class="skill-icon-wrapper">
+              <img src="src/assets/images/css.svg" alt="CSS" class="skill-icon" />
+            </div>
+            <div class="skill-name">CSS</div>
+            <div class="skill-level">
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div class="bg-gradient-to-r from-blue-500 to-teal-300 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
 
+          <!-- JavaScript -->
+          <div class="skill-card group">
+            <div class="skill-icon-wrapper">
+              <img src="src/assets/images/js.svg" alt="JavaScript" class="skill-icon" />
+            </div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-level">
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div class="bg-gradient-to-r from-blue-500 to-teal-300 h-2 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
 
+          <!-- PHP -->
+          <div class="skill-card group">
+            <div class="skill-icon-wrapper">
+              <img src="src/assets/images/php.svg" alt="PHP" class="skill-icon" />
+            </div>
+            <div class="skill-name">PHP</div>
+            <div class="skill-level">
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div class="bg-gradient-to-r from-blue-500 to-teal-300 h-2 rounded-full" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
 
+          <!-- SASS -->
+          <div class="skill-card group">
+            <div class="skill-icon-wrapper">
+              <img src="src/assets/images/sass.svg" alt="SASS" class="skill-icon" />
+            </div>
+            <div class="skill-name">SASS</div>
+            <div class="skill-level">
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div class="bg-gradient-to-r from-blue-500 to-teal-300 h-2 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Frameworks and Tools Section -->
+    <section id="Frameworks-outils" class="py-20 bg-gray-900 bg-opacity-30">
+      <div class="container mx-auto px-4">
+        <!-- Titre avec animation -->
+        <div class="flex justify-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold relative text-gradient">
+            Frameworks et outils
+            <span class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-300"></span>
+          </h2>
+        </div>
+        
+        <!-- Tools Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-10">
+          <!-- Tailwind -->
+          <div class="tool-card">
+            <img src="src/assets/images/tailwind.svg" alt="Tailwind" class="tool-icon" />
+            <span class="tool-name">Tailwind CSS</span>
+          </div>
 
+          <!-- Vite -->
+          <div class="tool-card">
+            <img src="src/assets/images/vite.svg" alt="Vite" class="tool-icon" />
+            <span class="tool-name">Vite</span>
+          </div>
 
+          <!-- Vue -->
+          <div class="tool-card">
+            <img src="src/assets/images/vue.svg" alt="Vue" class="tool-icon" />
+            <span class="tool-name">Vue.js</span>
+          </div>
 
+          <!-- WordPress -->
+          <div class="tool-card">
+            <img src="src/assets/images/wp.svg" alt="WordPress" class="tool-icon" />
+            <span class="tool-name">WordPress</span>
+          </div>
 
+          <!-- Symfony -->
+          <div class="tool-card">
+            <img src="src/assets/images/symfony.svg" alt="Symfony" class="tool-icon" />
+            <span class="tool-name">Symfony</span>
+          </div>
 
+          <!-- Bootstrap -->
+          <div class="tool-card">
+            <img src="src/assets/images/boostrap.png" alt="Bootstrap" class="tool-icon" />
+            <span class="tool-name">Bootstrap</span>
+          </div>
 
+          <!-- Figma -->
+          <div class="tool-card">
+            <img src="src/assets/images/figma.png" alt="Figma" class="tool-icon" />
+            <span class="tool-name">Figma</span>
+          </div>
 
+          <!-- Prisma -->
+          <div class="tool-card">
+            <img src="src/assets/images/prisma.svg" alt="Prisma" class="tool-icon" />
+            <span class="tool-name">Prisma</span>
+          </div>
 
+          <!-- Postman -->
+          <div class="tool-card">
+            <img src="src/assets/images/postman.svg" alt="Postman" class="tool-icon" />
+            <span class="tool-name">Postman</span>
+          </div>
 
+          <!-- Glider -->
+          <div class="tool-card">
+            <img src="src/assets/images/glider.png" alt="Glider" class="tool-icon" />
+            <span class="tool-name">Glider</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projets" class="py-20">
+      <div class="container mx-auto px-4">
+        <!-- Titre avec animation -->
+        <div class="flex justify-center mb-16">
+          <h2 id="typewriter" class="text-4xl md:text-5xl font-bold relative text-gradient">
+            Mes projets
+            <span class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-300"></span>
+          </h2>
+        </div>
+        
+        <!-- Projects Carousel -->
+        <div class="glide-09 relative w-full overflow-hidden">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <!-- Projet 1 -->
+              <li class="project-card">
+                <a href="https://mangoo-swart.vercel.app/" class="project-link" target="_blank">
+                  <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
+                    <img src="src/assets/images/mangoo.png" alt="Mangoo Project" class="project-image" />
+                    <div class="project-overlay">
+                      <h3 class="project-title">Mangoo</h3>
+                      <p class="project-description">Site e-commerce de mangas</p>
+                      <span class="project-cta">
+                        <span>Voir le projet</span>
+                        <i class="fas fa-external-link-alt ml-2"></i>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              
+              <!-- Projet 2 -->
+              <li class="project-card">
+                <a href="https://boutique-pokemon.vercel.app/" class="project-link" target="_blank">
+                  <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
+                    <img src="src/assets/images/pokemon.png" alt="Pokemon Project" class="project-image" />
+                    <div class="project-overlay">
+                      <h3 class="project-title">Boutique Pokemon</h3>
+                      <p class="project-description">E-commerce de produits Pokémon</p>
+                      <span class="project-cta">
+                        <span>Voir le projet</span>
+                        <i class="fas fa-external-link-alt ml-2"></i>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              
+              <!-- Projet 3 -->
+              <li class="project-card">
+                <a href="https://site-vitrine-film.vercel.app/" class="project-link" target="_blank">
+                  <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
+                    <img src="src/assets/images/fon.png" alt="Film Project" class="project-image" />
+                    <div class="project-overlay">
+                      <h3 class="project-title">Site Vitrine Film</h3>
+                      <p class="project-description">Présentation de films</p>
+                      <span class="project-cta">
+                        <span>Voir le projet</span>
+                        <i class="fas fa-external-link-alt ml-2"></i>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              
+              <!-- Projet 4 -->
+              <li class="project-card">
+                <a href="https://peupli-art-84s9.vercel.app/" class="project-link" target="_blank">
+                  <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
+                    <img src="src/assets/images/peupli-art.png" alt="Peupli Art" class="project-image" />
+                    <div class="project-overlay">
+                      <h3 class="project-title">Peupli Art</h3>
+                      <p class="project-description">Galerie d'art en ligne</p>
+                      <span class="project-cta">
+                        <span>Voir le projet</span>
+                        <i class="fas fa-external-link-alt ml-2"></i>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              
+              <!-- Projet 5 -->
+              <li class="project-card">
+                <a href="https://presentation-website-8u38.vercel.app/" class="project-link" target="_blank">
+                  <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
+                    <img src="src/assets/images/a.png" alt="Presentation Website" class="project-image" />
+                    <div class="project-overlay">
+                      <h3 class="project-title">Présentation</h3>
+                      <p class="project-description">Site de présentation personnel</p>
+                      <span class="project-cta">
+                        <span>Voir le projet</span>
+                        <i class="fas fa-external-link-alt ml-2"></i>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Arrows -->
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          
+          <!-- Bullets -->
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
-    <script>
-      var glide09 = new Glide(".glide-09", {
-        type: "carousel",
-        autoplay: 1,
-        animationDuration: 8500,
-        animationTimingFunc: "linear",
-        perView: 3,
-        classes: {
-          activeNav: "[&>*]:bg-slate-700",
-        },
-        breakpoints: {
-          1024: {
-            perView: 2,
-          },
-          640: {
-            perView: 1,
-            gap: 6,
-            
-          },
-        },
-      });
-
-      glide09.mount();
-    </script>
-
-
-    <style>
-      html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-      .text-animate {
-        animation: text-color-animation 3s infinite alternate linear;
-      }
-
-      @keyframes text-color-animation {
-        0% {
-          color: rgba(184, 203, 245, 0.662); /* Red */
-        }
-        50% {
-          color: rgba(177, 177, 177, 0.47); /* Blue */
-        }
-        50% {
-          color: rgb(80, 190, 250); /* Green */
-        }
-      }
-      
-.text-animate a {
-  position: relative;
-  color: #43abdf; /* Couleur du texte */
-  text-decoration: none; /* Supprimer la décoration de texte par défaut */
-}
-
-.text-animate a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  background-color: #5ca6cb; /* Couleur du soulignement */
-  transition: all 0.3s ease-in-out;
-  transform: translateX(-50%);
-}
-
-.text-animate a:hover::after {
-  width: 100%;
-  left: 0;
-  transform: translateX(0);
-}
-
-
-      
-      .text-animate1 {
-        animation: text-color-animation 3s infinite alternate linear;
-      }
-
-      @keyframes text-color-animation {
-        50% {
-          color: rgb(135, 231, 238); /* Red */
-        }
-        50% {
-          color: rgba(228, 227, 227, 0.548); /* Blue */
-        }
-        50% {
-          color: rgb(23, 161, 236); /* Green */
-        }
-      }
-      
-      
-    </style>
-<style>
-  .glide-09 {
-    margin-bottom: 100px; /* Ajustez cette valeur selon l'espace souhaité */
-    margin-top: 50px;
-  }
-  footer {
-    position: relative; /* Changez de 'fixed' à 'relative' pour que le footer suive le contenu */
-    width: 100%;
-    background-color: #333;
-    color: white;
-  }
-@media (max-width: 768px) {
-  .glide-09 ul li img {
-    max-width: 90%; /* Réduit la largeur maximale des images */
-    height: auto; /* Ajuste la hauteur automatiquement */
-  }
-
-  .glide-09 {
-    padding: 10px; /* Réduit le padding du conteneur du carrousel */
-  }
-
-  .glide-09 ul {
-    justify-content: center; /* Centre les images dans leur conteneur */
-  }
-}
-  
-</style>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Sélectionner tous les liens de la navbar qui ont un href débutant par #
-    const navbarLinks = document.querySelectorAll('a[href^="#"]');
-    
-    // Fonction pour gérer le défilement doux
-    const smoothScroll = (event) => {
-      event.preventDefault(); // Empêcher le comportement par défaut du lien
-
-      const targetId = event.currentTarget.getAttribute("href").substring(1); // Récupérer l'ID de la cible
-      const targetElement = document.getElementById(targetId); // Sélectionner l'élément cible
-
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth", // Défilement doux
-          block: "start", // Aligner le haut de l'élément à la partie supérieure de la fenêtre
-        });
-      }
-    };
-    // Ajouter un écouteur d'événement à chaque lien de la navbar
-    //commande e pour avoir la recherche et trouver le mot qon veut
-    navbarLinks.forEach((link) => {
-      link.addEventListener("click", smoothScroll);
-    });
-  });
-</script>
-
- 
+     <!-- Footer -->
+    <footer class="w-full py-8 bg-black/70 backdrop-blur-md border-t border-blue-400/20 mt-auto">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p class="text-gray-400">&copy; 2024 Portfolio développé avec passion par moi-même</p>
+          </div>
+          <div class="flex space-x-4">
+            <a href="mailto:bougarayani@gmail.com" class="footer-icon-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yani-bougara-15850224b/" target="_blank" class="footer-icon-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/yanibougara" target="_blank" class="footer-icon-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="tel:+33767522827" class="footer-icon-link">
+              <i class="fas fa-phone-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
